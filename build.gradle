@@ -8,7 +8,7 @@ repositories {
 }
 
 def allureVersion = '2.16.1',
-    selenideVersion = '5.24.0',
+    selenideVersion = '6.0.3',
     junitVersion = '5.8.1'
 
 allure {
@@ -30,7 +30,9 @@ dependencies {
             "io.qameta.allure:allure-rest-assured:$allureVersion",
             "org.aeonbits.owner:owner:1.0.12",
             'org.assertj:assertj-core:3.21.0',
-            "org.junit.jupiter:junit-jupiter-api:$junitVersion")
+            'org.junit.jupiter:junit-jupiter-params:5.8.1',
+            "org.junit.jupiter:junit-jupiter-api:$junitVersion",
+            'com.opencsv:opencsv:5.5.2')
     testRuntimeOnly(
             'org.slf4j:slf4j-simple:1.7.32',
             "org.junit.jupiter:junit-jupiter-engine:$junitVersion")
