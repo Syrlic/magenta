@@ -7,7 +7,6 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.*;
 import org.junit.jupiter.params.provider.MethodSource;
-import sun.nio.cs.UTF_8;
 
 import java.util.Map;
 
@@ -70,7 +69,7 @@ public class Tests extends BaseHelper {
 
     @Test
     @DisplayName("Contact us from section page")
-    void fillFormContactUsAtSectionTest() { //make test parametrized
+    void fillFormContactUsAtSectionTest() {
 
         step("Select section", () -> {
             $$("div.dropdown").find(Condition.text("Решения")).hover()
